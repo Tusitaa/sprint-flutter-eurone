@@ -68,6 +68,27 @@ class EuroOneStatusColors extends ThemeExtension<EuroOneStatusColors> {
       neutral: Color.lerp(neutral, other.neutral, t) ?? neutral,
     );
   }
+
+  /// Resolve a cor a partir da chave de status usada nos dados e componentes
+  /// (aceita as formas em ingles e em portugues).
+  Color forStatus(String rawStatus) {
+    switch (rawStatus.toLowerCase().trim()) {
+      case 'success':
+      case 'baixo':
+      case 'positivo':
+        return success;
+      case 'attention':
+      case 'atencao':
+        return attention;
+      case 'critical':
+      case 'critico':
+        return critical;
+      case 'info':
+        return info;
+      default:
+        return neutral;
+    }
+  }
 }
 
 ThemeData buildEuroOneTheme() {

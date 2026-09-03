@@ -31,6 +31,18 @@ class EducandoPerfilView extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Text(
+          'Meu painel',
+          style: theme.textTheme.headlineMedium?.copyWith(
+            fontWeight: FontWeight.w800,
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          'Acompanhe seu progresso, conquistas e missões da trilha.',
+          style: theme.textTheme.bodyMedium,
+        ),
+        const SizedBox(height: 16),
         // Cabeçalho com identificação do educando.
         Card(
           child: Padding(

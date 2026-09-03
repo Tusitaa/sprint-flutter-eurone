@@ -33,12 +33,6 @@ class _GestaoVisaoViewState extends State<GestaoVisaoView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const EuriHint(
-          pose: EuriPose.apresentando,
-          message: 'Sua visão executiva das turmas: indicadores, evolução e '
-              'alertas em um só lugar.',
-        ),
-        const SizedBox(height: 16),
         Text(
           'Visão executiva institucional',
           style: Theme.of(
@@ -49,6 +43,12 @@ class _GestaoVisaoViewState extends State<GestaoVisaoView> {
         Text(
           'Acompanhe saúde acadêmica, risco e evolução das turmas em um único painel.',
           style: Theme.of(context).textTheme.bodyMedium,
+        ),
+        const SizedBox(height: 16),
+        const EuriHint(
+          pose: EuriPose.apresentando,
+          message: 'Sua visão executiva das turmas: indicadores, evolução e '
+              'alertas em um só lugar.',
         ),
         const SizedBox(height: 16),
         const ResponsiveGrid(
@@ -71,7 +71,7 @@ class _GestaoVisaoViewState extends State<GestaoVisaoView> {
               trend: '+12',
             ),
             MetricCard(
-              label: 'Assiduidade media',
+              label: 'Assiduidade média',
               value: '82%',
               helper: 'Todas as turmas',
               icon: Icons.event_available_outlined,
@@ -246,7 +246,7 @@ class _GestaoVisaoViewState extends State<GestaoVisaoView> {
       if (_selectedRisk == 'all') {
         return true;
       }
-      return _riskToFilter(item.riskLabel) == _selectedRisk;
+      return riskFilterId(item.riskLabel) == _selectedRisk;
     }).toList();
   }
 
@@ -277,15 +277,5 @@ class _GestaoVisaoViewState extends State<GestaoVisaoView> {
         ? 'atencao'
         : 'baixo';
     return mockAlerts.where((item) => item.level == expected).take(6).toList();
-  }
-
-  String _riskToFilter(String value) {
-    if (value == 'critico') {
-      return 'critical';
-    }
-    if (value == 'atencao') {
-      return 'attention';
-    }
-    return 'low';
   }
 }

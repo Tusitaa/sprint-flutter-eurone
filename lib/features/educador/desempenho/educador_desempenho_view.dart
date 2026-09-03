@@ -35,12 +35,6 @@ class _EducadorDesempenhoViewState extends State<EducadorDesempenhoView> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const EuriHint(
-          pose: EuriPose.anotando,
-          message: 'Acompanhe cada educando de perto e registre os próximos '
-              'passos de cuidado.',
-        ),
-        const SizedBox(height: 16),
         Text(
           'Painel de desempenho',
           style: Theme.of(
@@ -51,6 +45,12 @@ class _EducadorDesempenhoViewState extends State<EducadorDesempenhoView> {
         Text(
           'Acompanhamento de presença, engajamento e cuidado dos seus educandos.',
           style: Theme.of(context).textTheme.bodyMedium,
+        ),
+        const SizedBox(height: 16),
+        const EuriHint(
+          pose: EuriPose.anotando,
+          message: 'Acompanhe cada educando de perto e registre os próximos '
+              'passos de cuidado.',
         ),
         const SizedBox(height: 16),
         ResponsiveGrid(
@@ -180,19 +180,8 @@ class _EducadorDesempenhoViewState extends State<EducadorDesempenhoView> {
       return mockSuggestedStudents;
     }
     return mockSuggestedStudents
-        .where((student) => _riskKey(student.riskLevel) == _selectedRisk)
+        .where((student) => riskFilterId(student.riskLevel) == _selectedRisk)
         .toList();
-  }
-
-  String _riskKey(String value) {
-    final normalized = value.toLowerCase();
-    if (normalized == 'critico') {
-      return 'critical';
-    }
-    if (normalized == 'atencao') {
-      return 'attention';
-    }
-    return 'low';
   }
 }
 
@@ -240,8 +229,8 @@ class _EngagementScatterCard extends StatelessWidget {
   }
 }
 
-/// Barras de presença e engajamento de um educando, construídas com widgets
-/// básicos (substitui o antigo gráfico de dispersão).
+/// Barras de presença e engajamento de um educando, coloridas pelo nível de
+/// cuidado.
 class _StudentEngagementBars extends StatelessWidget {
   const _StudentEngagementBars({required this.student, required this.color});
 

@@ -13,9 +13,22 @@ class EducandoCursosView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Text(
+          'Cursos e fóruns',
+          style: theme.textTheme.headlineMedium?.copyWith(
+            fontWeight: FontWeight.w800,
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          'Seus cursos e os fóruns da turma em um só lugar.',
+          style: theme.textTheme.bodyMedium,
+        ),
+        const SizedBox(height: 16),
         const EuriHint(
           pose: EuriPose.curioso,
           message: 'Explore seus cursos e fóruns — toque em um item para '
