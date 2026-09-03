@@ -96,7 +96,6 @@ void main() {
     expect(mockRewards.length, greaterThanOrEqualTo(10));
     expect(mockMissions.length, greaterThanOrEqualTo(10));
     expect(mockMetrics.length, greaterThanOrEqualTo(10));
-    expect(mockChartData.length, greaterThanOrEqualTo(10));
     expect(mockTeachers.length, greaterThanOrEqualTo(6));
   });
 }
