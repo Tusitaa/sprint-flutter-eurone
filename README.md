@@ -47,9 +47,6 @@ As credenciais são exibidas diretamente na tela de login. Todas usam a senha `1
 
 ## Telas do aplicativo
 
-> As imagens abaixo devem representar o aplicativo em execução. Substitua os
-> marcadores pelos prints reais gerados na sua máquina.
-
 ### Apresentação e acesso
 
 - **Splash / Apresentação** — tela inicial com a identidade do EuroONE e transição para o login.
