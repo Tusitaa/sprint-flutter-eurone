@@ -1,6 +1,6 @@
 # EuroONE
 
-Aplicativo Flutter desenvolvido para o **Challenge FIAP × Eurofarma**. O EuroONE é uma
+Aplicativo Flutter desenvolvido para o **Sprint Flutter**. O EuroONE é uma
 plataforma de aprendizagem em saúde que reúne, em um só lugar, a jornada do aluno,
 o acompanhamento pedagógico do professor e a visão executiva da gestão.
 
@@ -13,10 +13,10 @@ o acompanhamento pedagógico do professor e a visão executiva da gestão.
 
 - **Equipe:** IV-ONE
 - **Integrantes:**
-  - Guilherme Tusita
-  - Matheus Hadermeck
-  - Lucas Correa
-  - Karine Nascimento
+  - Guilherme Tusita RM554511
+  - Matheus Richard Hadermeck RM557221
+  - Lucas Almeida Bel Correa RM558539
+  - Karine Nascimento RM558810
 
 ## Objetivo do aplicativo
 
@@ -27,13 +27,9 @@ baseada no perfil (persona) de cada usuário:
 - **Educador (professor):** monitora o desempenho dos alunos e gerencia suas turmas.
 - **Gestão (administrador):** acompanha o corpo docente e a visão consolidada de alunos e métricas.
 
-## Repositório
-
-- GitHub: <https://github.com/Tusitaa/eurone-sprint-flutter>
-
 ## Vídeo de demonstração
 
-- Link do vídeo da navegação: **_(inserir o link aqui)_**
+- Link do vídeo da navegação: **_https://youtu.be/PIA4EzvILiU_**
 
 ## Credenciais de acesso (mock)
 
