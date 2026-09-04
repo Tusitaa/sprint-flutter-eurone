@@ -30,6 +30,7 @@ baseada no perfil (persona) de cada usuário:
 ## Vídeo de demonstração
 
 - Link do vídeo da navegação: **_https://youtu.be/PIA4EzvILiU_**
+- Link do repositório: **https://github.com/Tusitaa/sprint-flutter-eurone**
 
 ## Credenciais de acesso (mock)
 
