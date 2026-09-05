@@ -134,20 +134,29 @@ O projeto segue uma organização por camadas e por funcionalidade (feature):
 
 ```
 lib/
-├── app/                  # App, tema e rotas (go_router)
-├── core/
-│   ├── data/             # Dados mockados (mock_data.dart)
-│   └── models/           # Modelos de dados (AppUser, Curso, Turma, Professor, ...)
+├── app/                         # App, tema e rotas (go_router)
+├── data/                        # Dados mockados (mock_data.dart)
+├── models/                      # Modelos de dados e papéis de usuário
 ├── features/
-│   ├── splash/           # Tela de apresentação
-│   ├── auth/             # Login e autenticação mock
-│   ├── educando/         # Perfil + Cursos e Fóruns (+ detalhes)
-│   ├── educador/         # Desempenho + Turmas (+ detalhes)
-│   ├── gestao/           # Professores + Visão geral (+ detalhes)
-│   └── shared_detail/    # Telas de detalhe compartilhadas (turma)
+│   ├── splash/                  # Tela de apresentação
+│   ├── auth/                    # Login e autenticação mock
+│   ├── educando/
+│   │   ├── educando_shell.dart  # Navegação Perfil / Cursos e Fóruns
+│   │   ├── perfil/              # Perfil, progresso, conquistas e missões
+│   │   └── cursos/              # Cursos, fóruns e telas de detalhe
+│   ├── educador/
+│   │   ├── educador_shell.dart  # Navegação Desempenho / Turmas
+│   │   ├── desempenho/          # Indicadores, QR de check-in e alunos
+│   │   ├── turmas/              # Listagem de turmas
+│   │   └── alunos/              # Detalhe do aluno
+│   ├── gestao/
+│   │   ├── gestao_shell.dart    # Navegação Professores / Visão geral
+│   │   ├── professores/         # Painel e detalhe do professor
+│   │   └── visao/               # Métricas, turmas e alertas consolidados
+│   └── shared_detail/           # Detalhe de turma usado por Educador e Gestão
 └── shared/
-    ├── responsive/       # Grid responsivo
-    └── widgets/          # Componentes reutilizáveis (cards, painéis, gráficos, shells)
+    ├── responsive/              # Grid responsivo
+    └── widgets/                 # Componentes reutilizáveis (cards, painéis, gráficos, shells)
 ```
 
 ### Tecnologias
