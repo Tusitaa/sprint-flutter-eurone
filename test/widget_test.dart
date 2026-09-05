@@ -1,6 +1,6 @@
 import 'package:app_euro_one/app/app.dart';
-import 'package:app_euro_one/core/data/mock_data.dart';
-import 'package:app_euro_one/core/models/app_user.dart';
+import 'package:app_euro_one/data/mock_data.dart';
+import 'package:app_euro_one/models/app_user.dart';
 import 'package:app_euro_one/features/auth/auth_repository.dart';
 import 'package:app_euro_one/features/educador/educador_shell.dart';
 import 'package:app_euro_one/features/educando/educando_shell.dart';

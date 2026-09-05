@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/data/mock_data.dart';
-import '../../../core/models/dashboard_models.dart';
+import '../../../data/mock_data.dart';
+import '../../../models/dashboard_models.dart';
 import '../../../shared/format.dart';
 import '../../../shared/responsive/responsive_grid.dart';
 import '../../../shared/widgets/euri_mascot.dart';

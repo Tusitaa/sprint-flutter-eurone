@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/models/user_role.dart';
+import '../../models/user_role.dart';
 import '../../shared/widgets/euri_mascot.dart';
 import '../auth/auth_controller.dart';
 

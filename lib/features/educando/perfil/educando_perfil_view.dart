@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../core/data/mock_data.dart';
+import '../../../data/mock_data.dart';
 import '../../auth/auth_controller.dart';
 import '../../../shared/responsive/responsive_grid.dart';
 import '../../../shared/widgets/metric_card.dart';

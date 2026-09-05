@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../core/models/dashboard_models.dart';
+import '../../models/dashboard_models.dart';
 
 class FilterBar extends StatelessWidget {
   const FilterBar({

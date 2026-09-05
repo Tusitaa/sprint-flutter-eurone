@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/data/mock_data.dart';
+import '../../data/mock_data.dart';
 import '../../shared/format.dart';
 import '../../shared/responsive/responsive_grid.dart';
 import '../../shared/widgets/detail_scaffold.dart';

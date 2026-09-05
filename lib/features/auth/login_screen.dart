@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/data/mock_data.dart';
-import '../../core/models/user_role.dart';
+import '../../data/mock_data.dart';
+import '../../models/user_role.dart';
 import '../../shared/widgets/euri_mascot.dart';
 import '../../shared/widgets/section_panel.dart';
 import 'auth_controller.dart';

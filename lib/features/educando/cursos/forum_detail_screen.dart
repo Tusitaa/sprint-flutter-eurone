@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/data/mock_data.dart';
+import '../../../data/mock_data.dart';
 import '../../../shared/widgets/detail_scaffold.dart';
 import '../../../shared/widgets/section_panel.dart';
 import '../../../shared/widgets/status_badge.dart';

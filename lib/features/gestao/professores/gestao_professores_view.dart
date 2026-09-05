@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/data/mock_data.dart';
+import '../../../data/mock_data.dart';
 import '../../../shared/responsive/responsive_grid.dart';
 import '../../../shared/widgets/metric_card.dart';
 import '../../../shared/widgets/section_panel.dart';

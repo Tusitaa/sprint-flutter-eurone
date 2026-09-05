@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/data/mock_data.dart';
-import '../../shared/format.dart';
-import '../../shared/responsive/responsive_grid.dart';
-import '../../shared/widgets/detail_scaffold.dart';
-import '../../shared/widgets/metric_card.dart';
-import '../../shared/widgets/section_panel.dart';
-import '../../shared/widgets/simple_bar_chart.dart';
-import '../../shared/widgets/status_badge.dart';
+import '../../../data/mock_data.dart';
+import '../../../shared/format.dart';
+import '../../../shared/responsive/responsive_grid.dart';
+import '../../../shared/widgets/detail_scaffold.dart';
+import '../../../shared/widgets/metric_card.dart';
+import '../../../shared/widgets/section_panel.dart';
+import '../../../shared/widgets/simple_bar_chart.dart';
+import '../../../shared/widgets/status_badge.dart';
 
 /// Detalhe de uma turma, aberto tanto pela área do Educador quanto da Gestão.
 /// Recebe o [classId] como parâmetro de rota.

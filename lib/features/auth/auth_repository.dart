@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/data/mock_data.dart';
-import '../../core/models/app_user.dart';
+import '../../data/mock_data.dart';
+import '../../models/app_user.dart';
 
 /// Fornece a implementação de autenticação usada pelo app.
 ///

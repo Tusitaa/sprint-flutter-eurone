@@ -1,6 +1,6 @@
-import 'package:euroone/models/app_user.dart';
-import 'package:euroone/models/dashboard_models.dart';
-import 'package:euroone/models/user_role.dart';
+import '../models/app_user.dart';
+import '../models/dashboard_models.dart';
+import '../models/user_role.dart';
 
 const mockRequiredPassword = '123456';
 

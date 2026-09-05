@@ -1,8 +1,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../core/data/mock_data.dart';
-import '../../core/models/app_user.dart';
-import '../../core/models/user_role.dart';
+import '../../data/mock_data.dart';
+import '../../models/app_user.dart';
+import '../../models/user_role.dart';
 import 'auth_repository.dart';
 
 final authControllerProvider = NotifierProvider<AuthController, AuthState>(

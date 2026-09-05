@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../core/data/mock_data.dart';
+import '../../../data/mock_data.dart';
 import '../../../shared/format.dart';
 import '../../../shared/widgets/section_panel.dart';
 import '../../../shared/widgets/status_badge.dart';

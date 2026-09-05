@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../core/data/mock_data.dart';
-import '../../../core/models/dashboard_models.dart';
+import '../../../data/mock_data.dart';
+import '../../../models/dashboard_models.dart';
 import '../../../shared/widgets/detail_scaffold.dart';
 import '../../../shared/widgets/section_panel.dart';
 import '../../../shared/widgets/status_badge.dart';

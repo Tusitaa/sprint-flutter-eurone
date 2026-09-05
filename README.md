@@ -6,7 +6,7 @@ o acompanhamento pedagógico do professor e a visão executiva da gestão.
 
 > **Importante:** esta é uma versão MVP/protótipo navegável. Todos os dados são
 > **mockados/simulados** e ficam organizados em classes e listas no código
-> (`lib/core/data/mock_data.dart`). Não há integração com API, banco de dados,
+> (`lib/data/mock_data.dart`). Não há integração com API, banco de dados,
 > Firebase ou qualquer backend.
 
 ## Equipe
@@ -27,7 +27,7 @@ baseada no perfil (persona) de cada usuário:
 - **Educador (professor):** monitora o desempenho dos alunos e gerencia suas turmas.
 - **Gestão (administrador):** acompanha o corpo docente e a visão consolidada de alunos e métricas.
 
-## Vídeo de demonstração
+## Demonstração
 
 - Link do vídeo da navegação: **_https://youtu.be/PIA4EzvILiU_**
 - Link do repositório: **https://github.com/Tusitaa/sprint-flutter-eurone**
